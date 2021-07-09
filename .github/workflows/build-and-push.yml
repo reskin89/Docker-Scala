@@ -31,10 +31,10 @@ jobs:
           context: ./coursier/
           push: true
           tags: reskin89/scala-coursier-alpine:latest, reskin89/scala-coursier-alpine:0.1.0
-    -
-      name: Build and Push sbt
-      uses: docker/build-push-action@v2
-      with:
-        context: ./sbt/
-        push: true
-        tags: reskin89/scala-sbt-alpine:latest, reskin89/scala-sbt-alpine:0.1.0
+      -
+        name: Build and Push sbt
+        uses: docker/build-push-action@v2
+        with:
+          context: ./sbt/
+          push: true
+          tags: reskin89/scala-sbt-alpine:latest, reskin89/scala-sbt-alpine:0.1.0
